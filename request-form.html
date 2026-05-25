@@ -1,0 +1,42 @@
+<div class="container mt-5">
+
+  <h2>Request Design</h2>
+
+  <form [formGroup]="requestForm" (ngSubmit)="submit()">
+
+    <input
+      type="text"
+      class="form-control mb-3"
+      placeholder="Client Name"
+      formControlName="clientName">
+
+    <input
+      type="email"
+      class="form-control mb-3"
+      placeholder="Email"
+      formControlName="email">
+
+    <input
+      type="text"
+      class="form-control mb-3"
+      placeholder="Service Type"
+      formControlName="serviceType">
+
+    <textarea
+      class="form-control mb-3"
+      placeholder="Project Description"
+      formControlName="projectDescription">
+    </textarea>
+
+    <input
+      type="number"
+      class="form-control mb-3"
+      placeholder="Budget"
+      formControlName="budget">
+
+    <button class="btn btn-primary">
+      Submit
+    </button>
+
+  </form>
+</div>
